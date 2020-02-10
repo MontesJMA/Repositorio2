@@ -22,6 +22,16 @@ public class Array {
 			System.out.print(array[i] + " ");
 		}
 	}
+	
+	public static void sumar_array(int[] array) {
+		int suma;
+		suma = array[0];
+		
+		for (int i = 1; i < array.length; i++) {
+			suma += array[i];
+			
+		}
+	}
 
 	
 }
