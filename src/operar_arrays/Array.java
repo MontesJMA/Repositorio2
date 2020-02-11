@@ -32,6 +32,19 @@ public class Array {
 			
 		}
 	}
+	
+public static int[] Hacerunarray(int longitud, int liminf, int limsup) {
+		
+		int array[] = new int[longitud];
+		
+		for (int i = 0; i < array.length; i++) {
+			
+			array[i] = (int) Math.round(Math.random() * (limsup - liminf) + liminf);
+		}
+		
+		return array;
+	}
+
 
 	
 }
