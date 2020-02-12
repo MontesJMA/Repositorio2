@@ -33,13 +33,13 @@ public class Array {
 		}
 	}
 	
-public static int[] Hacerunarray(int longitud, int liminf, int limsup) {
+public static int[] Hacerunarray(int longitud, int liminferior, int limsuperior) {
 		
 		int array[] = new int[longitud];
 		
-		for (int i = 0; i < array.length; i--) {
+		for (int i = 0; i < array.length; i++) {
 			
-			array[i] = (int) Math.round(Math.random() * (limsup - liminf) + liminf);
+			array[i] = (int) Math.round(Math.random() * (limsuperior - liminferior) + liminferior);
 		}
 		
 		return array;
