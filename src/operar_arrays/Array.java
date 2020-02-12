@@ -33,6 +33,7 @@ public class Array {
 		}
 	}
 	
+<<<<<<< HEAD
 public static int[] Hacerunarray(int longitud, int liminferior, int limsuperior) {
 		
 		int array[] = new int[longitud];
@@ -43,6 +44,24 @@ public static int[] Hacerunarray(int longitud, int liminferior, int limsuperior)
 		}
 		
 		return array;
+=======
+	public static void ordenaArray (int array[]) {
+		boolean hayIntercambios;
+		do {
+			hayIntercambios = false;
+			// Empieza el algoritmo
+			for (int i = 0; i < array.length - 1; i++) {
+				if (array[i+1] < array[i]) {
+					// Entonces hago un intercambio
+					int aux = array[i+1];
+					array[i+1] = array[i];
+					array[i] = aux;
+					hayIntercambios = true;
+				}
+			}
+		} while (hayIntercambios);
+
+>>>>>>> refs/heads/rama2
 	}
 
 
